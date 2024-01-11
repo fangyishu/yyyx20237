@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>班级相册</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"/>
+    </head>
+    <body
+            style="background-color: #ffffff;"
+    >
+        <h1>班级相册</h1>
+        <div id="gallery">
+            <img src="img/01.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/02.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/03.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/04.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/05.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/06.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/07.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/08.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/09.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/10.jpg" style="height: 120px; display: inline-block;"/>
+            <img src="img/11.jpg" style="height: 120px; display: inline-block;"/>
+
+            <img src="img/f01.jpeg" style="height: 120px; display: inline-block;"/>
+            <img src="img/f02.jpeg" style="height: 120px; display: inline-block;"/>
+            <img src="img/f03.jpeg" style="height: 120px; display: inline-block;"/>
+            <img src="img/f04.jpeg" style="height: 120px; display: inline-block;"/>
+            <img src="img/f05.jpeg" style="height: 120px; display: inline-block;"/>
+            <img src="img/f06.jpeg" style="height: 120px; display: inline-block;"/>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+        <script src=""></script>
+        <script>
+            lightGallery(document.getElementById('gallery'), {
+                autoplayFirstVideo: false,
+                pager: false,
+                galleryId: "nature",
+                plugins: [lgZoom],
+                mobileSettings: {
+                    controls: false,
+                    showCloseIcon: false,
+                    download: false,
+                    rotate: false
+                }
+            });
+        </script>
+    </body>
+</html>
